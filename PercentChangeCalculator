@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+
+class Main {
+  public static void main(String[] args) {
+      System.out.println("Hello world.  This is a percent change calculator");
+
+      Scanner input = new Scanner(System.in);
+      
+      System.out.println("");
+      System.out.print("Enter your new/current value: ");
+      float new_value = input.nextFloat();
+
+      System.out.print("Enter your old/initial value: ");
+      float old_value = input.nextFloat();      
+
+      float percent_change = (((new_value - old_value) / old_value) * 100);
+      
+      System.out.println("The relative percentage change is " + percent_change + "%");
+
+  }
+}     
+ 
+ 
